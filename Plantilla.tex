@@ -1,0 +1,151 @@
+%% LyX 2.3.7 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,twoside,spanish]{Plantilla}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=5cm,bmargin=3cm,lmargin=3cm,rmargin=3cm}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{3}
+\usepackage{babel}
+\addto\shorthandsspanish{\spanishdeactivate{~<>}}
+
+\usepackage{pifont}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[authoryear]{natbib}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=false]
+ {hyperref}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{Plantilla}
+
+\AtBeginDocument{
+  \def\labelitemi{\ding{109}}
+  \def\labelitemii{\ding{113}}
+  \def\labelitemiii{\Pisymbol{psy}{68}}
+  \def\labelitemiv{\ding{226}}
+}
+
+\makeatother
+
+\begin{document}
+
+\Titulo{Título del Informe}
+
+\Subtitulo{Subtitulo del Informe}
+
+\Autores{%
+\begin{tabular}{c}
+Autor 1\tabularnewline
+Agregue más filas para más autores\tabularnewline
+\end{tabular}}
+
+\AutoresCorto{Nombre 1 \& Nombre 2 \& Nombre $n$}
+
+\Materia{Nombre de la Materia}
+
+\Universidad{Nombre de la Universidad}
+
+\Facultad{Nombre de la Facultad}
+
+\Programa{Nombre del Programa}
+
+\Ciudad{Nombre de la Ciudad}
+
+\Fecha{Mes y Año}
+
+\Logo{\includegraphics[width=7cm]{Imagenes/logo-uniquindio}}
+
+\GenerarPortada{}
+
+\DerechosAutor{}
+
+\tableofcontents{}
+
+\chapter*{Resumen}
+
+La plantilla de informes científicos tiene como objetivo proporcionar
+a estudiantes de licenciatura en diversas disciplinas, como matemáticas,
+ciencias naturales y educación infantil, una herramienta versátil
+y eficiente para la creación de informes académicos de alta calidad.
+Su propósito principal es simplificar el proceso de redacción de informes,
+permitiendo a los usuarios:\\
+
+\begin{enumerate}
+\item \textbf{Ingresar Datos de Forma Precisa y Rápida:} La plantilla ofrece
+campos específicos para ingresar información esencial, como título,
+subtitulo, materia, universidad, facultad, programa, ciudad y fecha,
+lo que agiliza la elaboración de informes detallados.
+\item \textbf{Personalizar el Formato:} Los usuarios pueden personalizar
+el nombre de los capítulos y seleccionar colores para adaptar el formato
+del informe a sus necesidades y preferencias.
+\item \textbf{Gestionar Referencias Bibliográficas:} La plantilla integra
+un archivo en formato BibTeX, lo que permite a los usuarios importar
+y gestionar sus referencias bibliográficas de manera eficiente. Además,
+la plantilla se encarga de incluir automáticamente en la lista de
+referencias solo aquellas fuentes citadas en el texto.
+\item \textbf{Fomentar la Investigación y la Mejora en la Educación:} La
+plantilla está diseñada para estudiantes que buscan realizar investigaciones
+y contribuir a la mejora de los procesos de enseñanza y aprendizaje
+en sus respectivas áreas de estudio.
+\item \textbf{Actualización Continua:} El autor de la plantilla se compromete
+a mantenerla actualizada y mejorable, y la ha compartido públicamente
+en repositorios de GitHub, lo que permite a la comunidad académica
+beneficiarse de sus mejoras y contribuir al desarrollo continuo de
+la plantilla.
+\end{enumerate}
+
+\TipoCapitulo{Capítulo}
+
+\NombreCapitulo{Introducción}
+
+\chapter{Introducción}
+
+En el ámbito de la investigación y la educación, la creación de informes
+científicos precisos y estructurados es esencial para compartir conocimientos
+de manera efectiva. Es por eso que te presentamos una plantilla diseñada
+con cuidado y atención a los detalles, desarrollada por un apasionado
+licenciado y profesional como tú.\\
+
+Esta plantilla, compatible con LyX y LaTeX, ofrece a los usuarios
+la capacidad de generar informes académicos de alta calidad de manera
+rápida y sencilla. Con campos para ingresar información crucial como
+título, subtitulo, materia, universidad, facultad, programa, ciudad
+y fecha, los estudiantes de licenciatura en una variedad de disciplinas,
+desde matemáticas hasta educación infantil, encontrarán esta herramienta
+invaluable para sus investigaciones y proyectos académicos.\\
+
+Lo que hace que esta plantilla sea aún más poderosa es su integración
+con archivos en formato BibTeX, lo que permite a los usuarios importar
+y gestionar sus referencias bibliográficas de manera eficiente. Al
+citar fuentes en el texto, la plantilla se encarga automáticamente
+de incluir solo las referencias citadas en la lista de referencias,
+agilizando el proceso de redacción académica.\\
+
+Además, esta plantilla no es estática; está en constante evolución
+gracias a las habilidades de programación y el compromiso de su autor,
+quien busca siempre mejorarla y mantenerla actualizada. Puedes encontrarla
+de forma pública en los repositorios de GitHub, lo que significa que
+la comunidad académica puede contribuir y beneficiarse de las mejoras
+continuas. \citep{Rincon2023}
+
+\chapter{Desarrollo del Informe}
+
+En este capítulo puede crear las secciones y subsecciones correspondientes
+al desarrollo del informe. \newpage{}
+
+\renewcommand{\bibname}{Referencias}
+
+\bibliographystyle{apa}
+\phantomsection\addcontentsline{toc}{chapter}{\bibname}\bibliography{Bibliografia}
+
+\end{document}

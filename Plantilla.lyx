@@ -274,6 +274,14 @@ Actualización Continua:
  continuo de la plantilla.
 \end_layout
 
+\begin_layout TipoCapitulo
+Capítulo
+\end_layout
+
+\begin_layout NombreCapitulo
+Introducción
+\end_layout
+
 \begin_layout Capitulo
 Introducción
 \end_layout
@@ -325,6 +333,15 @@ Además, esta plantilla no es estática; está en constante evolución gracias
  Puedes encontrarla de forma pública en los repositorios de GitHub, lo que
  significa que la comunidad académica puede contribuir y beneficiarse de
  las mejoras continuas.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Rincon2023"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Capitulo
